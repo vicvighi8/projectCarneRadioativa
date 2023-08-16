@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class radioativeMeatMovement : MonoBehaviour
 {
+    public float vel;
+    
     // Start is called before the first frame update
     void Start()
     {
