@@ -18,7 +18,7 @@ public class EnemyScriptWalking : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         currentPoint = pointB.transform;
-        anim.SetBool("isRunning", true);
+        //anim.SetBool("isRunning", true);
 
 
     }
