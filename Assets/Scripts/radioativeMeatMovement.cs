@@ -38,8 +38,7 @@ public class radioativeMeatMovement : MonoBehaviour
     //Better for handling Physics, can be called multiple times per update frame.
     private void FixedUpdate()
     {
-        //check if is grounded
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundObjects);
+        
 
         //move
         Move();
@@ -66,6 +65,7 @@ public class radioativeMeatMovement : MonoBehaviour
             FlipCharacter();
         }
     }
+    //oi
 
     private void ProcessInputs()
     {
@@ -74,6 +74,9 @@ public class radioativeMeatMovement : MonoBehaviour
         {
             isJumping = true;
         }
+
+        //check if is grounded
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundObjects);
     }
 
     private void FlipCharacter()
